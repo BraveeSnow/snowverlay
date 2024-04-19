@@ -22,6 +22,7 @@ CDEPEND="
         dev-cpp/nlohmann_json
         dev-libs/spdlog
         media-libs/glfw
+        media-libs/glew
         media-libs/libglvnd
         media-libs/vulkan-loader
         X? (
