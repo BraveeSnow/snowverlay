@@ -41,7 +41,10 @@ RDEPEND="
         ${CDEPEND}
         ${PYTHON_DEPS}
         plot? (
-            $( python_gen_cond_dep 'dev-python/numpy[${PYTHON_USEDEP}]' )
+            $( python_gen_cond_dep '
+                dev-python/numpy[${PYTHON_USEDEP}]
+                dev-python/matplotlib[${PYTHON_USEDEP}]
+            ' )
         )
 "
 
