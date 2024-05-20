@@ -2,7 +2,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
 
-inherit desktop python-single-r1
+inherit desktop python-single-r1 xdg
 
 DESCRIPTION="A GUI/TUI tool for managing portage"
 HOMEPAGE="https://github.com/BraveeSnow/airport"
@@ -38,6 +38,8 @@ src_install() {
 }
 
 pkg_postinst() {
+	xdg_pkg_postinst
+
 	ewarn "Please note that airport is in a volatile state. It is currently"
 	ewarn "not suitable for managing portage."
 }
