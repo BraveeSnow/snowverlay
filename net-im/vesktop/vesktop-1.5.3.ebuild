@@ -46,7 +46,7 @@ src_install() {
 
 	# desktop stuff
 	domenu "${FILESDIR}/${PN}.desktop"
-	doicon -s 256 "${FILESDIR}/vencord.png"
+	doicon -s 256 "${FILESDIR}/vesktop.png"
 }
 
 pkg_postinst() {
